@@ -93,16 +93,45 @@ body {
   max-width: 1600px;
   border: 3px solid;
   margin: auto;
-}
-
-nav {
-  height: 300px;
+  font-size: 100%;
 }
 
 ul {
-  margin: 0;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
 }
 
 ul li {
-  display: inline;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 1em;
+  font-size: 3em;
+  height: 100%;
+}
+
+ul li:first-child {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: auto;
+}
+
+ul li:first-child img {
+  height: 100%;
+  width: auto;
+  border: 1px solid red;
+}
+
+ul li:last-child {
+  margin-right: 0em;
 }
