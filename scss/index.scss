@@ -58,6 +58,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: black;
 }
 a:hover {
   text-decoration: none;
@@ -90,27 +91,27 @@ body {
 }
 
 ul {
-  height: 100px;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center; //не работает по центру
+  align-items: center;
   border: $brd;
+
   li {
     justify-content: right;
     margin-right: 1em;
     font-size: 3em;
-
-    height: 100%;
+    border: $brd;
   }
   li:first-child {
     align-self: flex-start;
     margin-right: auto;
+    height: 100%;
 
     img {
       height: 100%;
       width: auto;
-      border: $brd;
     }
   }
   li:last-child {
