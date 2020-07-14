@@ -90,30 +90,32 @@ h1 {
   
 }
 body{
-  max-width: 3800px;
+  max-width: 1920px;
   font-size: 100%;
   margin: auto;
-  background-color:rgba(255, 115, 0, 0.733);
+  //background-color:rgba(255, 115, 0, 0.733);
 }
 
 $height_nav: 70px;
 .navigation {
   
   height: $height_nav;
-  width: 100%;
+  
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
 
   position: fixed;  
-  top: 0;  
+  top: 0; 
+ width: 1800px;
+  border: $brd;
   z-index: 100;  
-  width: 100%;  
+  max-width: 1920px;
 
   .li {
     justify-content: right;
-    margin-right: 1em;
+    margin-right: 1%;
     font-size: ($height_nav * 0.6);
   }
   .li:first-child {
@@ -127,15 +129,14 @@ $height_nav: 70px;
     }
   }
   .li:last-child {
-    margin-right: 0em;
+    margin-right: 0;
   }
   .nav_ikons {
     max-height: 50px;
     img {
-      padding-right: 3px;
       height: 0.5em;
       display: block;
-      margin: -20px 0;
+      margin: -($height_nav/3.5) 0;
     }
   }
 }
@@ -155,3 +156,27 @@ $height_nav: 70px;
   margin: auto;
   margin-top: 0.5em;
 }
+
+.advant{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid black;
+  height: 50%;
+  font-size: 2em;
+  img{
+    width: 100%;
+  }
+}
+
+.advant_image, .advant_ul{
+  width: 50%;
+}
+.advant_ul{
+ padding: 2.5em 0 0 13%;
+ line-height: 200%;
+ 
+}
+
+
