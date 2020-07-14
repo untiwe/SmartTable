@@ -96,7 +96,7 @@ body {
   font-size: 100%;
 }
 
-ul {
+.navigation {
   height: 70px;
   width: 100%;
   display: -webkit-box;
@@ -110,7 +110,7 @@ ul {
           align-items: center;
 }
 
-ul li {
+.navigation li {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -118,18 +118,18 @@ ul li {
   font-size: 42px;
 }
 
-ul li:first-child {
+.navigation li:first-child {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: auto;
   height: 100%;
 }
 
-ul li:first-child img {
+.navigation li:first-child img {
   height: 100%;
   width: auto;
 }
 
-ul li:last-child {
+.navigation li:last-child {
   margin-right: 0em;
 }
