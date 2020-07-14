@@ -82,14 +82,23 @@ h6 {
 /*конец обнуления*/
 
 $brd: 1px solid red;
-
+h1 {
+  font-size: 6em;
+  margin-top: 1.8em;
+  margin-left: 50%;
+  text-align: left;
+}
 body {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: auto;
   font-size: 100%;
+  background-image: url(/img/BackGraundCat.jpg); /* фоновое изображение сверху */
+  background-position: top center; /* Положение фона */
+  background-repeat: no-repeat; /* Отменяем повторение фона */
+  background-size: cover; //100% 40em;
 }
 
-ul {
+.navigation {
   $height_nav: 70px;
   height: $height_nav;
   width: 100%;
@@ -114,5 +123,19 @@ ul {
   }
   li:last-child {
     margin-right: 0em;
+  }
+  .nav_ikons {
+    max-height: 50px;
+    img {
+      padding-right: 3px;
+      height: 0.5em;
+      display: block;
+      margin: -20px 0;
+    }
+  }
+}
+@media (min-width: 500px) {
+  body {
+    background-size: auto 700px;
   }
 }
