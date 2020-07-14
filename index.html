@@ -23,13 +23,13 @@
     <header>
       <nav>
         <ul class="navigation">
-          <li>
+          <li class="nav_box">
             <a href="пусто"><img src="./img/Logo.png" alt="логотип" /></a>
           </li>
-          <li><a href="пусто">Главня</a></li>
-          <li><a href="пусто">Фотогалерея</a></li>
-          <li><a href="пусто">Контакты</a></li>
-          <li><a href="пусто">Доставка</a></li>
+          <li class="nav_box"><a href="пусто">Главня</a></li>
+          <li class="nav_box"><a href="пусто">Фотогалерея</a></li>
+          <li class="nav_box"><a href="пусто">Контакты</a></li>
+          <li class="nav_box"><a href="пусто">Доставка</a></li>
           <li class="nav_ikons">
             <a title="Whatsapp" href="whatsapp://send?phone=79270000000"><img src="./img/WhatsappIkon.svg"
                 alt="Написать в Whatsapp" /><br />
@@ -37,16 +37,15 @@
                   src="./img/TelegramIkon.svg" alt="Написать в Telegram" /></a>
             </a>
           </li>
-          <li><a href="пусто">Заказать</a></li>
+          <li class="nav_box"><a href="пусто">Заказать</a></li>
         </ul>
       </nav>
     </header>
 
     <h1>С заботой о вашем комфорте</h1>
   </div>
-  <video class="video" src="./Cats.mp4" width="100%" height="100%" controls="controls">
-
-  </video>
+  <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/l4_pZKXSwnI" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Видео презентация</iframe>
 
 
   <br />
@@ -181,16 +180,16 @@
 </body>
 <script>
   /* Сккрипт затемнения фона */
-    window.onscroll = function () {
-      var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
-      if (scrolled !== 0) {
-        // Если прокрутка есть, то делаем блок прозрачным
-        document.querySelector('.navigation').style.backgroundColor = "rgba(255, 255, 255, 0.01";
-      } else {
-        // Если нет, то делаем его полностью видимым
-        document.querySelector('.navigation').style.backgroundColor = "rgba(255, 255, 255, 1";
-      };
+  window.onscroll = function () {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
+    if (scrolled !== 0) {
+      // Если прокрутка есть, то делаем блок прозрачным
+      document.querySelector('.navigation').style.backgroundColor = "rgba(255, 255, 255, 0.01";
+    } else {
+      // Если нет, то делаем его полностью видимым
+      document.querySelector('.navigation').style.backgroundColor = "rgba(255, 255, 255, 1";
     };
-  </script>
+  };
+</script>
 
 </html>
