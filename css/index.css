@@ -31,11 +31,11 @@ img { vertical-align: top; }
 h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
 
 /*конец обнуления*/
-h1 { font-size: 6em; margin-top: 1.8em; margin-left: 50%; text-align: left; }
+h1 { font-size: 6em; padding-top: 5em; padding-left: 50%; text-align: left; }
 
 body { max-width: 3800px; font-size: 100%; margin: auto; }
 
-.navigation { height: 70px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: fixed; top: 0; z-index: 100; width: 100%; }
+.navigation { height: 70px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: white; position: fixed; top: 0; z-index: 100; width: 100%; }
 
 .navigation li { -webkit-box-pack: right; -ms-flex-pack: right; justify-content: right; margin-right: 1em; font-size: 42px; }
 
@@ -51,4 +51,4 @@ body { max-width: 3800px; font-size: 100%; margin: auto; }
 
 .backgraund_fone { margin-top: -150px; max-width: 100%; height: 800px; background-image: url(/img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: cover; }
 
-.video { display: block; width: 900px; height: 600px; margin: auto; margin-top: 1em; }
+.video { display: block; width: 900px; height: 600px; margin: auto; margin-top: 0em; }

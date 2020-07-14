@@ -84,8 +84,8 @@ h6 {
 $brd: 10px solid red;
 h1 {
   font-size: 6em;
-  margin-top: 1.8em;
-  margin-left: 50%;
+  padding-top: 5em;
+  padding-left: 50%;
   text-align: left;
   
 }
@@ -103,7 +103,7 @@ $height_nav: 70px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  //background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 
   position: fixed;  
   top: 0;  
@@ -139,7 +139,6 @@ $height_nav: 70px;
   }
 }
 .backgraund_fone {
-  
   margin-top: -($height_nav+80);
   max-width: 100%;
   height: 800px;
@@ -153,5 +152,5 @@ $height_nav: 70px;
   width: 900px;
   height: 600px;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 0em;
 }
