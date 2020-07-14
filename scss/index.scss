@@ -111,12 +111,12 @@ $height_nav: 70px;
   z-index: 100;  
   width: 100%;  
 
-  li {
+  .li {
     justify-content: right;
     margin-right: 1em;
     font-size: ($height_nav * 0.6);
   }
-  li:first-child {
+  .li:first-child {
     align-self: flex-start;
     margin-right: auto;
     height: 100%;
@@ -126,7 +126,7 @@ $height_nav: 70px;
       width: auto;
     }
   }
-  li:last-child {
+  .li:last-child {
     margin-right: 0em;
   }
   .nav_ikons {
