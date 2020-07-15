@@ -81,37 +81,44 @@ h6 {
 }
 /*конец обнуления*/
 
-$brd: 1px solid red;
+$brd: 10px solid red;
 h1 {
   font-size: 6em;
-  margin-top: 1.8em;
-  margin-left: 50%;
+  padding-top: 5em;
+  padding-left: 50%;
   text-align: left;
+  
 }
-body {
+body{
   max-width: 1920px;
-  margin: auto;
   font-size: 100%;
-  background-image: url(/img/BackGraundCat.jpg); /* фоновое изображение сверху */
-  background-position: top center; /* Положение фона */
-  background-repeat: no-repeat; /* Отменяем повторение фона */
-  background-size: cover; //100% 40em;
+  margin: auto;
+  //background-color:rgba(255, 115, 0, 0.733);
 }
 
+$height_nav: 70px;
 .navigation {
-  $height_nav: 70px;
+  
   height: $height_nav;
-  width: 100%;
+  
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: rgba(255, 255, 255, 1);
 
-  li {
+  position: fixed;  
+  top: 0; 
+ width: 1800px;
+  border: $brd;
+  z-index: 100;  
+  max-width: 1920px;
+
+  .li {
     justify-content: right;
-    margin-right: 1em;
+    margin-right: 1%;
     font-size: ($height_nav * 0.6);
   }
-  li:first-child {
+  .li:first-child {
     align-self: flex-start;
     margin-right: auto;
     height: 100%;
@@ -121,21 +128,55 @@ body {
       width: auto;
     }
   }
-  li:last-child {
-    margin-right: 0em;
+  .li:last-child {
+    margin-right: 0;
   }
   .nav_ikons {
     max-height: 50px;
     img {
-      padding-right: 3px;
       height: 0.5em;
       display: block;
-      margin: -20px 0;
+      margin: -($height_nav/3.5) 0;
     }
   }
 }
-@media (min-width: 500px) {
-  body {
-    background-size: auto 700px;
+.backgraund_fone {
+  margin-top: -($height_nav+80);
+  max-width: 100%;
+  height: 800px;
+  background-image: url(/img/BackGraundCat.png); /* фоновое изображение сверху */
+  background-position: top center; /* Положение фона */
+  background-repeat: no-repeat; /* Отменяем повторение фона */
+  background-size: cover; //100% 40em;
+}
+.video{
+  display: block;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
+.advant{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid black;
+  height: 50%;
+  font-size: 2em;
+  img{
+    width: 100%;
   }
 }
+
+.advant_image, .advant_ul{
+  width: 50%;
+}
+.advant_ul{
+ padding: 2.5em 0 0 13%;
+ line-height: 200%;
+ 
+}
+
+

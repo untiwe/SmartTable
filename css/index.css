@@ -1,166 +1,62 @@
 @charset "UTF-8";
 /*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+* { padding: 0; margin: 0; border: 0; }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-:focus,
-:active {
-  outline: none;
-}
+:focus, :active { outline: none; }
 
-a:focus,
-a:active {
-  outline: none;
-}
+a:focus, a:active { outline: none; }
 
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
+nav, footer, header, aside { display: block; }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-input,
-button,
-textarea {
-  font-family: inherit;
-}
+input, button, textarea { font-family: inherit; }
 
-input::-ms-clear {
-  display: none;
-}
+input::-ms-clear { display: none; }
 
-button {
-  cursor: pointer;
-}
+button { cursor: pointer; }
 
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+button::-moz-focus-inner { padding: 0; border: 0; }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
+a, a:visited { text-decoration: none; color: black; }
 
-a:hover {
-  text-decoration: none;
-}
+a:hover { text-decoration: none; }
 
-ul li {
-  list-style: none;
-}
+ul li { list-style: none; }
 
-img {
-  vertical-align: top;
-}
+img { vertical-align: top; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
 
 /*конец обнуления*/
-h1 {
-  font-size: 6em;
-  margin-top: 1.8em;
-  margin-left: 50%;
-  text-align: left;
-}
+h1 { font-size: 6em; padding-top: 5em; padding-left: 50%; text-align: left; }
 
-body {
-  max-width: 1920px;
-  margin: auto;
-  font-size: 100%;
-  background-image: url(/img/BackGraundCat.jpg);
-  /* фоновое изображение сверху */
-  background-position: top center;
-  /* Положение фона */
-  background-repeat: no-repeat;
-  /* Отменяем повторение фона */
-  background-size: cover;
-}
+body { max-width: 1920px; font-size: 100%; margin: auto; }
 
-.navigation {
-  height: 70px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+.navigation { height: 70px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: white; position: fixed; top: 0; width: 1800px; border: 10px solid red; z-index: 100; max-width: 1920px; }
 
-.navigation li {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin-right: 1em;
-  font-size: 42px;
-}
+.navigation .li { -webkit-box-pack: right; -ms-flex-pack: right; justify-content: right; margin-right: 1%; font-size: 42px; }
 
-.navigation li:first-child {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-right: auto;
-  height: 100%;
-}
+.navigation .li:first-child { -ms-flex-item-align: start; align-self: flex-start; margin-right: auto; height: 100%; }
 
-.navigation li:first-child img {
-  height: 100%;
-  width: auto;
-}
+.navigation .li:first-child img { height: 100%; width: auto; }
 
-.navigation li:last-child {
-  margin-right: 0em;
-}
+.navigation .li:last-child { margin-right: 0; }
 
-.navigation .nav_ikons {
-  max-height: 50px;
-}
+.navigation .nav_ikons { max-height: 50px; }
 
-.navigation .nav_ikons img {
-  padding-right: 3px;
-  height: 0.5em;
-  display: block;
-  margin: -20px 0;
-}
+.navigation .nav_ikons img { height: 0.5em; display: block; margin: -20px 0; }
 
-@media (min-width: 500px) {
-  body {
-    background-size: auto 700px;
-  }
-}
+.backgraund_fone { margin-top: -150px; max-width: 100%; height: 800px; background-image: url(/img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: cover; }
+
+.video { display: block; width: 900px; height: 600px; margin: auto; margin-top: 0.5em; }
+
+.advant { display: -webkit-box; display: -ms-flexbox; display: flex; width: 80%; margin: auto; margin-top: 2em; border: 1px solid black; height: 50%; font-size: 2em; }
+
+.advant img { width: 100%; }
+
+.advant_image, .advant_ul { width: 50%; }
+
+.advant_ul { padding: 2.5em 0 0 13%; line-height: 200%; }
