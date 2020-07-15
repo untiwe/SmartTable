@@ -81,37 +81,36 @@ h6 {
 }
 /*конец обнуления*/
 
+$height_nav: 70px;
+$back_imge_height: 700px;
+
 $brd: 10px solid red;
 h1 {
   font-size: 6em;
-  padding-top: 5em;
+  padding-top: $back_imge_height * 0.6;
   padding-left: 50%;
   text-align: left;
-  
 }
-body{
+body {
   max-width: 1920px;
   font-size: 100%;
   margin: auto;
   //background-color:rgba(255, 115, 0, 0.733);
 }
 
-$height_nav: 70px;
 .navigation {
-  
   height: $height_nav;
-  
+
   display: flex;
   justify-content: flex-end;
+  align-content: stretch;
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
 
-  position: fixed;  
-  top: 0; 
- width: 1800px;
-  border: $brd;
-  z-index: 100;  
-  max-width: 1920px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .li {
     justify-content: right;
@@ -141,23 +140,23 @@ $height_nav: 70px;
   }
 }
 .backgraund_fone {
-  margin-top: -($height_nav+80);
+  margin-top: -($height_nav + 80);
   max-width: 100%;
-  height: 800px;
+  height: $back_imge_height;
   background-image: url(/img/BackGraundCat.png); /* фоновое изображение сверху */
   background-position: top center; /* Положение фона */
   background-repeat: no-repeat; /* Отменяем повторение фона */
-  background-size: cover; //100% 40em;
+  background-size: auto $back_imge_height;
 }
-.video{
+.video {
   display: block;
   width: 900px;
   height: 600px;
   margin: auto;
-  margin-top: 0.5em;
+  margin-top: $back_imge_height * 0.4;
 }
 
-.advant{
+.advant {
   display: flex;
   width: 80%;
   margin: auto;
@@ -165,18 +164,42 @@ $height_nav: 70px;
   border: 1px solid black;
   height: 50%;
   font-size: 2em;
-  img{
+  img {
     width: 100%;
   }
 }
 
-.advant_image, .advant_ul{
+.advant_image,
+.advant_ul {
   width: 50%;
 }
-.advant_ul{
- padding: 2.5em 0 0 13%;
- line-height: 200%;
- 
+.advant_ul {
+  text-align: right;
+  padding: 2% 13% 0 0;
+  line-height: 200%;
 }
-
-
+h2 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 4em;
+}
+.inf_cards {
+  margin-top: 2%;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  //border: $brd;
+}
+.card {
+  width: 40%;
+  margin: 0 5% 1% 5%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 3em;
+  img {
+    width: 100%;
+  }
+  p {
+    padding: 10px 10px 10px 10px;
+  }
+}
