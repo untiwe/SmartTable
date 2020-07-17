@@ -71,7 +71,8 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
+ul,
+li {
   list-style: none;
 }
 
@@ -161,7 +162,7 @@ body {
   margin-top: -150px;
   max-width: 100%;
   height: 700px;
-  background-image: url(/img/BackGraundCat.png);
+  background-image: url(../img/BackGraundCat.png);
   /* фоновое изображение сверху */
   background-position: top center;
   /* Положение фона */
@@ -235,4 +236,44 @@ h2 {
 
 .card p {
   padding: 10px 10px 10px 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.l_footer {
+  float: left;
+  width: 20%;
+  margin: 45.45455px 30px auto 0;
+  text-align: left;
+}
+
+.r_footer {
+  margin-top: 45.45455px;
+  float: right;
+  display: block;
+  width: 65%;
+}
+
+.ul_footer {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.li_footer {
+  text-align: center;
+  width: 200px;
+  height: 30px;
 }

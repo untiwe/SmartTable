@@ -63,7 +63,8 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
-ul li {
+ul,
+li {
   list-style: none;
 }
 img {
@@ -79,12 +80,13 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
 /*конец обнуления*/
 
 $height_nav: 70px;
 $back_imge_height: 700px;
 
-$brd: 10px solid red;
+$brd: 5px solid red;
 h1 {
   font-size: 6em;
   padding-top: $back_imge_height * 0.6;
@@ -143,7 +145,7 @@ body {
   margin-top: -($height_nav + 80);
   max-width: 100%;
   height: $back_imge_height;
-  background-image: url(/img/BackGraundCat.png); /* фоновое изображение сверху */
+  background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */
   background-position: top center; /* Положение фона */
   background-repeat: no-repeat; /* Отменяем повторение фона */
   background-size: auto $back_imge_height;
@@ -202,4 +204,46 @@ h2 {
   p {
     padding: 10px 10px 10px 10px;
   }
+}
+
+$footer_height: 100px;
+
+footer {
+  width: 100%;
+  height: $footer_height;
+  //border: $brd;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.l_footer {
+  float: left;
+  width: 20%;
+  margin: ($footer_height/2.2) 30px auto 0;
+  //border: $brd;
+  text-align: left;
+}
+.r_footer {
+  margin-top: ($footer_height/2.2);
+  float: right;
+  display: block;
+  width: 65%;
+  //border: $brd;
+}
+//.p_footer {
+  //border: $brd;}
+
+
+.ul_footer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  //border: $brd;
+}
+.li_footer {
+  text-align: center;
+  width: 200px;
+  height: 30px;
 }
