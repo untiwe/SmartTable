@@ -35,6 +35,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
+  
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -107,7 +108,7 @@ body {
   justify-content: flex-end;
   align-content: stretch;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
 
   position: fixed;
   top: 0;
@@ -150,6 +151,7 @@ body {
   background-repeat: no-repeat; /* Отменяем повторение фона */
   background-size: auto $back_imge_height;
 }
+
 .video {
   display: block;
   width: 900px;
@@ -246,4 +248,229 @@ footer {
   text-align: center;
   width: 200px;
   height: 30px;
+}
+
+.massge_bottoms{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: none;
+  
+  
+}
+@media (max-width:767px) {
+  body.lock{
+      overflow: hidden;
+  }
+  .header_burger{
+      display: block;
+      position: fixed;
+      top: 3px;
+      right: 1px;
+      width: 30px;
+      height: 20px;  
+      z-index: 3; 
+      
+     
+  }
+  .header_burger span{
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+  }
+  .header_burger:before,
+  .header_burger:after{
+      content: '';
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+  }
+  .header_burger:before{
+      top: 0;
+  }
+  .header_burger::after{
+      bottom: 0;
+  }
+  .header_burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active:after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+  }
+  .header_burger.active span{
+    transform: scale(0);}
+
+  .nav_ikons{
+    display: none;
+  }
+  .navigation{
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+    top: -100%;
+    transition: all 0.3s ease 0s;
+    
+     .li:first-child {
+    
+     height: 50px;
+     padding: 0;
+     align-self: center;
+                      
+     } 
+    }     
+    .navigation.active{
+      top:0;
+  } 
+  .massge_bottoms{
+    display: flex;
+    a {
+      display: block;
+    }
+    
+  }
+  .telegram_button,.whatsapp_button{
+    width: 50%;
+    text-align: center;
+    img{
+      height: 100%;
+    }
+  }
+  .telegram_button{
+    
+    background-color: blue;
+    
+  }
+  .whatsapp_button{
+    
+    background-color: chartreuse;
+
+  }
+
+  h1 {
+    font-size: 3em;
+    padding-top: $back_imge_height * 0.3;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+
+  .video {
+    display: block;
+   width: 100%;
+    height: $back_imge_height * 0.25;
+    margin: 0 auto;
+    margin-top: $back_imge_height * 0.2;
+  }
+  .backgraund_fone {
+    margin-top: -($height_nav + 80);
+    max-width: 100%;
+    //height: $back_imge_height;
+    background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */
+    background-position: top center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    background-size: auto $back_imge_height*0.5;
+  }
+
+  .advant {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    //border: 1px solid black;
+    height: 50%;
+    font-size: 1.6em;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .advant_image,
+  .advant_ul {
+    width: 100%;
+  }
+  .advant_ul {
+    text-align: right;
+    padding: 2% 13% 0 0;
+    line-height: 200%;
+  }
+  h2 {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2em;
+  }
+  .inf_cards {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: wrap;
+    width: 95%;
+    margin: 0 auto;
+    //border: $brd;
+  }
+  .card {
+    width: 100%;
+    margin: 0 5% 1% 5%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+    img {
+      width: 100%;
+    }
+    p {
+      padding: 10px 10px 10px 10px;
+    }
+  }
+  footer {
+    margin-top: 2%;
+    width: 100%;
+    height: $footer_height*3;
+   // border: $brd;
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: column-reverse;
+    margin-top: 20%;
+  }
+  
+  .l_footer {
+    width: 100%;
+   // border: $brd;
+    text-align: center;
+    height: 60%;
+  }
+  .r_footer {
+    margin-top: 0;
+    height: 80%;
+    width: 100%;
+   //@extend border: $brd;
+    text-align: left
+  }
+  //.p_footer {
+   // border: $brd;}
+  
+  
+  .ul_footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   //border: 1px solid black;
+  }
+  .li_footer {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+  }
 }
