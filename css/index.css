@@ -1,55 +1,7 @@
 @charset "UTF-8";
-/*Обнуление*/
-* { padding: 0; margin: 0; border: 0; }
-
-*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-:focus, :active { outline: none; }
-
-a:focus, a:active { outline: none; }
-
-nav, footer, header, aside { display: block; }
-
-html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
-
-input, button, textarea { font-family: inherit; }
-
-input::-ms-clear { display: none; }
-
-button { cursor: pointer; }
-
-button::-moz-focus-inner { padding: 0; border: 0; }
-
-a, a:visited { text-decoration: none; color: black; }
-
-a:hover { text-decoration: none; }
-
-ul, li { list-style: none; }
-
-img { vertical-align: top; }
-
-h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
-
-/*конец обнуления*/
 h1 { font-size: 6em; padding-top: 420px; padding-left: 50%; text-align: left; }
 
-body { max-width: 1920px; font-size: 100%; margin: auto; }
-
-.navigation { height: 70px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: rgba(255, 255, 255, 0); position: fixed; top: 0; left: 0; width: 100%; }
-
-.navigation .li { -webkit-box-pack: right; -ms-flex-pack: right; justify-content: right; margin-right: 1%; font-size: 42px; }
-
-.navigation .li:first-child { -ms-flex-item-align: start; align-self: flex-start; margin-right: auto; height: 100%; }
-
-.navigation .li:first-child img { height: 100%; width: auto; }
-
-.navigation .li:last-child { margin-right: 0; }
-
-.navigation .nav_ikons { max-height: 50px; }
-
-.navigation .nav_ikons img { height: 0.5em; display: block; margin: -20px 0; }
-
-.backgraund_fone { margin-top: -150px; max-width: 100%; height: 700px; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 700px; }
+.backgraund_fone { margin-top: -125px; max-width: 100%; height: 700px; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 700px; }
 
 .video { display: block; width: 900px; height: 600px; margin: auto; margin-top: 280px; }
 
@@ -71,51 +23,15 @@ h2 { margin-top: 2%; text-align: center; font-size: 4em; }
 
 .card p { padding: 10px 10px 10px 10px; }
 
-footer { width: 100%; height: 100px; display: inline-block; font-size: 1.2em; }
-
-.l_footer { float: left; width: 20%; margin: 45.45455px 30px auto 0; text-align: left; }
-
-.r_footer { margin-top: 45.45455px; float: right; display: block; width: 65%; }
-
-.ul_footer { width: 100%; height: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-
-.li_footer { text-align: center; width: 200px; height: 30px; }
-
-.massge_bottoms { position: fixed; bottom: 0; width: 100%; height: 40px; display: none; }
-
-@media (max-width: 767px) { body.lock { overflow: hidden; }
-  .header_burger { display: block; position: fixed; top: 3px; right: 1px; width: 30px; height: 20px; z-index: 3; }
-  .header_burger span { position: absolute; background-color: black; left: 0; width: 100%; height: 2px; top: 9px; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
-  .header_burger:before, .header_burger:after { content: ''; background-color: black; position: absolute; width: 100%; height: 2px; left: 0; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
-  .header_burger:before { top: 0; }
-  .header_burger::after { bottom: 0; }
-  .header_burger.active:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); top: 9px; }
-  .header_burger.active:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); bottom: 9px; }
-  .header_burger.active span { -webkit-transform: scale(0); transform: scale(0); }
-  .nav_ikons { display: none; }
-  .navigation { z-index: 3; background-color: white; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 80%; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; top: -100%; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
-  .navigation .li:first-child { height: 50px; padding: 0; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
-  .navigation.active { top: 0; }
-  .massge_bottoms { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .massge_bottoms a { display: block; }
-  .telegram_button, .whatsapp_button { width: 50%; text-align: center; }
-  .telegram_button img, .whatsapp_button img { height: 100%; }
-  .telegram_button { background-color: blue; }
-  .whatsapp_button { background-color: chartreuse; }
-  h1 { font-size: 3em; padding-top: 210px; padding-left: 0%; text-align: center; }
-  .video { display: block; width: 100%; height: 175px; margin: 0 auto; margin-top: 140px; }
-  .backgraund_fone { margin-top: -150px; max-width: 100%; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 350px; }
+@media (max-width: 767px) { h1 { font-size: 3em; padding-top: 210px; padding-left: 0%; text-align: center; }
+  .video { display: block; width: 100%; height: 175px; margin-top: 140px; }
+  .backgraund_fone { margin-top: -125px; max-width: 100%; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 350px; }
   .advant { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin: auto; margin-top: 20%; height: 50%; font-size: 1.6em; }
   .advant img { width: 100%; }
   .advant_image, .advant_ul { width: 100%; }
-  .advant_ul { text-align: right; padding: 2% 13% 0 0; line-height: 200%; }
+  .advant_ul { text-align: center; padding: 2% 0 0 0; line-height: 200%; }
   h2 { margin-top: 20%; text-align: center; font-size: 2em; }
   .inf_cards { margin-top: 2%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: wrap; flex-flow: wrap; width: 95%; margin: 0 auto; }
   .card { width: 100%; margin: 0 5% 1% 5%; border: 1px solid black; text-align: center; font-size: 2em; }
   .card img { width: 100%; }
-  .card p { padding: 10px 10px 10px 10px; }
-  footer { margin-top: 2%; width: 100%; height: 300px; font-size: 1.2em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-flow: column-reverse; flex-flow: column-reverse; margin-top: 20%; }
-  .l_footer { width: 100%; text-align: center; height: 60%; }
-  .r_footer { margin-top: 0; height: 80%; width: 100%; text-align: left; }
-  .ul_footer { width: 100%; height: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  .li_footer { text-align: center; width: 200px; height: 30px; } }
+  .card p { padding: 10px 10px 10px 10px; } }

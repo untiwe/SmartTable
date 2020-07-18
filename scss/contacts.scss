@@ -1,0 +1,50 @@
+.article{
+  margin: 100px auto 300px;
+  
+  text-align: left;
+  
+}
+h1{
+  font-size: 3em;
+  padding-left: 0;
+  text-align: center;
+}
+
+.contacts, .form{
+  padding-left: 25%;
+  margin-top: 50px;
+  line-height: 35px;
+  font-size: 2em;
+}
+
+.form{
+
+}
+input, textarea{
+  margin-top: 1%;
+  background-color: rgb(213, 216, 198);
+  font-size: 0.8em;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  background-color:  rgb(213, 216, 198);;
+}
+
+@media (max-width:767px) {
+  .article{
+    margin: 30px auto 100px;
+    //border: 2px solid black;
+    text-align: center;
+  }
+  h1{
+    font-size: 2em;
+  }
+  .contacts, .form{
+    padding-left: 0;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 1.5em;
+  }
+}

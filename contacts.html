@@ -1,7 +1,3 @@
-<!--Напоминания:
-  выставть номера для меседжеров
--->
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -17,10 +13,10 @@
   <!--роде как keywords поисковики уже не используют-->
   <title>SmartTable</title>
   <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/contacts.css" />
 </head>
 
-<body class="backgraund_fone">
+<body>
   <header>
     <ul class="navigation">
       <div class="li">
@@ -47,61 +43,58 @@
       <span></span>
     </div>
   </header>
-  <main>
-    <article>
-      <section>
-        <h1>С заботой о вашем комфорте</h1>
-      </section>
-      <section>
-        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/l4_pZKXSwnI" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Видео
-          презентация
-        </iframe>
-      </section>
-      <section class="advant">
-        <div class="advant_image">
-          <img src="./img/BackGraundC.jpg" alt="характеристики" />
-        </div>
 
-        <ul class="advant_ul">
-          <li>Приемущество номер 1</li>
-          <li>Приемущество номер 2</li>
-          <li>Приемущество номер 3</li>
-          <li>Приемущество номер 4</li>
-          <li>Приемущество номер 5</li>
-        </ul>
+  <!-- Кнопки меседжеров для смартфона -->
+
+  <div class="massge_bottoms">
+    <a class="telegram_button" title="Telegram" href="https://telegram.me/логинкомпании" target="_blank"><img
+        src="./img/TelegramIkon.svg" alt="Написать в Telegram" /></a>
+    <a class="whatsapp_button" title="Whatsapp" href="whatsapp://send?phone=79270000000"> <img
+        src="./img/WhatsappIkon.svg" alt="Написать в Whatsapp" /></a>
+  </div>
+
+  <main>
+    <article class="article">
+      <h1>С нами леко связаться</h1>
+      <section class="contacts">
+
+        <p>Мы всегда готовы ответить вам в рабочее время с 9:00 до 21:00 без выходных
+          <br>
+          Телефон для звонков. А так же vaiber/whatsapp/telegram </p>
+        <p>9 909 909-90-90</p>
+        <p>Почтовый ящик</p>
+        <p>SmartTable@gmail.com</p>
+
+
       </section>
-      <h2>Для вашего удобства, мы сделали доставку бесплатно</h2>
-      <section class="inf_cards">
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
+      <section class="form">
+        <h2>Вы можете оставить заявку и мы вам перезвоним</h2>
+        <form action="https://formspree.io/mjvaarge" method="POST">
+          <p>
+            <label>Имя</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Номер телефона</label>
+            <input type="tel" name="nomber">
+          </p>
+
+          <p>
+            <label>Дополнительные пожелания</label>
+            <textarea></textarea>
+          </p>
+          <p>
+            <button>
+              Отправить
+            </button>
+
+          </p>
+        </form>
       </section>
     </article>
 
-    <!-- Кнопки меседжеров для смартфона -->
 
-    <div class="massge_bottoms">
-      <a class="telegram_button" title="Telegram" href="https://telegram.me/логинкомпании" target="_blank"><img
-          src="./img/TelegramIkon.svg" alt="Написать в Telegram" /></a>
-      <a class="whatsapp_button" title="Whatsapp" href="whatsapp://send?phone=79270000000"> <img
-          src="./img/WhatsappIkon.svg" alt="Написать в Whatsapp" /></a>
-    </div>
-
-
+   
   </main>
   <footer>
     <div class="l_footer">
@@ -123,6 +116,7 @@
     </div>
   </footer>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
 </script>

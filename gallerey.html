@@ -1,7 +1,3 @@
-<!--Напоминания:
-  выставть номера для меседжеров
--->
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -17,10 +13,12 @@
   <!--роде как keywords поисковики уже не используют-->
   <title>SmartTable</title>
   <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/template.css" />
+  <link rel="stylesheet" href="./css/gallerey.css" />
+  
 </head>
 
-<body class="backgraund_fone">
+<body>
   <header>
     <ul class="navigation">
       <div class="li">
@@ -47,61 +45,37 @@
       <span></span>
     </div>
   </header>
+
+  <!-- Кнопки меседжеров для смартфона -->
+
+  <div class="massge_bottoms">
+    <a class="telegram_button" title="Telegram" href="https://telegram.me/логинкомпании" target="_blank"><img
+        src="./img/TelegramIkon.svg" alt="Написать в Telegram" /></a>
+    <a class="whatsapp_button" title="Whatsapp" href="whatsapp://send?phone=79270000000"> <img
+        src="./img/WhatsappIkon.svg" alt="Написать в Whatsapp" /></a>
+  </div>
+
   <main>
-    <article>
-      <section>
-        <h1>С заботой о вашем комфорте</h1>
-      </section>
-      <section>
-        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/l4_pZKXSwnI" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Видео
-          презентация
-        </iframe>
-      </section>
-      <section class="advant">
-        <div class="advant_image">
-          <img src="./img/BackGraundC.jpg" alt="характеристики" />
-        </div>
-
-        <ul class="advant_ul">
-          <li>Приемущество номер 1</li>
-          <li>Приемущество номер 2</li>
-          <li>Приемущество номер 3</li>
-          <li>Приемущество номер 4</li>
-          <li>Приемущество номер 5</li>
-        </ul>
-      </section>
-      <h2>Для вашего удобства, мы сделали доставку бесплатно</h2>
-      <section class="inf_cards">
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-        <div class="card">
-          <img src="./img/mini-cat.jpg" alt="фото цвета" />
-          <p class="text_card"><a href="Пусто">Купить</a></p>
-        </div>
-      </section>
-    </article>
-
-    <!-- Кнопки меседжеров для смартфона -->
-
-    <div class="massge_bottoms">
-      <a class="telegram_button" title="Telegram" href="https://telegram.me/логинкомпании" target="_blank"><img
-          src="./img/TelegramIkon.svg" alt="Написать в Telegram" /></a>
-      <a class="whatsapp_button" title="Whatsapp" href="whatsapp://send?phone=79270000000"> <img
-          src="./img/WhatsappIkon.svg" alt="Написать в Whatsapp" /></a>
+    <h1>Галлерея изобажений</h1>
+    <div class="photos">
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
+      <div class="photo_card"><img class="image" src="./img/mini-cat.jpg"></div>
     </div>
 
-
+    <br>
   </main>
   <footer>
     <div class="l_footer">
@@ -123,6 +97,7 @@
     </div>
   </footer>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
 </script>
@@ -152,6 +127,28 @@
     });
   });
 
+</script>
+
+<script>
+  $(document).ready(function () { // Ждём загрузки страницы
+
+    $(".image").click(function () {	// Событие клика на маленькое изображение
+      var img = $(this);	// Получаем изображение, на которое кликнули
+      var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+      $("body").append("<div class='popup'>" + //Добавляем в тело документа разметку всплывающего окна
+        "<div class='popup_bg'></div>" + // Блок, который будет служить фоном затемненным
+        "<img src='" + src + "' class='popup_img' />" + // Само увеличенное фото
+        "</div>");
+      $(".popup").fadeIn(800); // Медленно выводим изображение
+      $(".popup_bg").click(function () {	// Событие клика на затемненный фон	   
+        $(".popup").fadeOut(800);	// Медленно убираем всплывающее окно
+        setTimeout(function () {	// Выставляем таймер
+          $(".popup").remove(); // Удаляем разметку всплывающего окна
+        }, 800);
+      });
+    });
+
+  });
 </script>
 
 </html>
