@@ -1,5 +1,3 @@
-
-
 $back_imge_height: 700px;
 
 $brd: 3px solid red;
@@ -9,7 +7,6 @@ h1 {
   padding-left: 50%;
   text-align: left;
 }
-
 
 $height_nav: 45px;
 
@@ -78,13 +75,20 @@ h2 {
     padding: 10px 10px 10px 10px;
   }
 }
+//стили кнопки вверх
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url(../img/icon_top.png) no-repeat;
+}
 
-
-
-
-@media (max-width:767px) {
-  
-
+@media (max-width: 767px) {
   h1 {
     font-size: 3em;
     padding-top: $back_imge_height * 0.3;
@@ -92,10 +96,9 @@ h2 {
     text-align: center;
   }
 
-
   .video {
     display: block;
-   width: 100%;
+    width: 100%;
     height: $back_imge_height * 0.25;
     margin-top: $back_imge_height * 0.2;
   }
@@ -106,7 +109,7 @@ h2 {
     background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */
     background-position: top center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
-    background-size: auto $back_imge_height*0.5;
+    background-size: auto $back_imge_height * 0.5;
   }
 
   .advant {
@@ -122,7 +125,7 @@ h2 {
       width: 100%;
     }
   }
-  
+
   .advant_image,
   .advant_ul {
     width: 100%;
@@ -158,5 +161,7 @@ h2 {
       padding: 10px 10px 10px 10px;
     }
   }
-  
+  .scrollup {
+    right: 10px;
+  }
 }

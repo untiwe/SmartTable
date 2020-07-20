@@ -100,7 +100,8 @@
       <a class="whatsapp_button" title="Whatsapp" href="whatsapp://send?phone=79270000000"> <img
           src="./img/WhatsappIkon.svg" alt="Написать в Whatsapp" /></a>
     </div>
-
+    <!-- Кнопка вверх -->
+    <a href="#" class="scrollup">Наверх</a>
 
   </main>
   <footer>
@@ -153,5 +154,27 @@
   });
 
 </script>
+
+
+<script type="text/javascript">
+/* кнопка прокрутки вверх*/
+  $(document).ready(function(){
+   
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+   
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
+   
+  });
+  </script>
+
 
 </html>

@@ -1,37 +1,180 @@
 @charset "UTF-8";
-h1 { font-size: 6em; padding-top: 420px; padding-left: 50%; text-align: left; }
+h1 {
+  font-size: 6em;
+  padding-top: 420px;
+  padding-left: 50%;
+  text-align: left;
+}
 
-.backgraund_fone { margin-top: -125px; max-width: 100%; height: 700px; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 700px; }
+.backgraund_fone {
+  margin-top: -125px;
+  max-width: 100%;
+  height: 700px;
+  background-image: url(../img/BackGraundCat.png);
+  /* фоновое изображение сверху */
+  background-position: top center;
+  /* Положение фона */
+  background-repeat: no-repeat;
+  /* Отменяем повторение фона */
+  background-size: auto 700px;
+}
 
-.video { display: block; width: 900px; height: 600px; margin: auto; margin-top: 280px; }
+.video {
+  display: block;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  margin-top: 280px;
+}
 
-.advant { display: -webkit-box; display: -ms-flexbox; display: flex; width: 80%; margin: auto; margin-top: 2em; border: 1px solid black; height: 50%; font-size: 2em; }
+.advant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid black;
+  height: 50%;
+  font-size: 2em;
+}
 
-.advant img { width: 100%; }
+.advant img {
+  width: 100%;
+}
 
-.advant_image, .advant_ul { width: 50%; }
+.advant_image,
+.advant_ul {
+  width: 50%;
+}
 
-.advant_ul { text-align: right; padding: 2% 13% 0 0; line-height: 200%; }
+.advant_ul {
+  text-align: right;
+  padding: 2% 13% 0 0;
+  line-height: 200%;
+}
 
-h2 { margin-top: 2%; text-align: center; font-size: 4em; }
+h2 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 4em;
+}
 
-.inf_cards { margin-top: 2%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: wrap; flex-flow: wrap; width: 100%; }
+.inf_cards {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+}
 
-.card { width: 40%; margin: 0 5% 1% 5%; border: 2px solid black; text-align: center; font-size: 3em; }
+.card {
+  width: 40%;
+  margin: 0 5% 1% 5%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 3em;
+}
 
-.card img { width: 100%; }
+.card img {
+  width: 100%;
+}
 
-.card p { padding: 10px 10px 10px 10px; }
+.card p {
+  padding: 10px 10px 10px 10px;
+}
 
-@media (max-width: 767px) { h1 { font-size: 3em; padding-top: 210px; padding-left: 0%; text-align: center; }
-  .video { display: block; width: 100%; height: 175px; margin-top: 140px; }
-  .backgraund_fone { margin-top: -125px; max-width: 100%; background-image: url(../img/BackGraundCat.png); /* фоновое изображение сверху */ background-position: top center; /* Положение фона */ background-repeat: no-repeat; /* Отменяем повторение фона */ background-size: auto 350px; }
-  .advant { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin: auto; margin-top: 20%; height: 50%; font-size: 1.6em; }
-  .advant img { width: 100%; }
-  .advant_image, .advant_ul { width: 100%; }
-  .advant_ul { text-align: center; padding: 2% 0 0 0; line-height: 200%; }
-  h2 { margin-top: 20%; text-align: center; font-size: 2em; }
-  .inf_cards { margin-top: 2%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: wrap; flex-flow: wrap; width: 95%; margin: 0 auto; }
-  .card { width: 100%; margin: 0 5% 1% 5%; border: 1px solid black; text-align: center; font-size: 2em; }
-  .card img { width: 100%; }
-  .card p { padding: 10px 10px 10px 10px; } }
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url(../img/icon_top.png) no-repeat;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+    padding-top: 210px;
+    padding-left: 0%;
+    text-align: center;
+  }
+  .video {
+    display: block;
+    width: 100%;
+    height: 175px;
+    margin-top: 140px;
+  }
+  .backgraund_fone {
+    margin-top: -125px;
+    max-width: 100%;
+    background-image: url(../img/BackGraundCat.png);
+    /* фоновое изображение сверху */
+    background-position: top center;
+    /* Положение фона */
+    background-repeat: no-repeat;
+    /* Отменяем повторение фона */
+    background-size: auto 350px;
+  }
+  .advant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    height: 50%;
+    font-size: 1.6em;
+  }
+  .advant img {
+    width: 100%;
+  }
+  .advant_image,
+  .advant_ul {
+    width: 100%;
+  }
+  .advant_ul {
+    text-align: center;
+    padding: 2% 0 0 0;
+    line-height: 200%;
+  }
+  h2 {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2em;
+  }
+  .inf_cards {
+    margin-top: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card {
+    width: 100%;
+    margin: 0 5% 1% 5%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card p {
+    padding: 10px 10px 10px 10px;
+  }
+  .scrollup {
+    right: 10px;
+  }
+}
